@@ -4,243 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steak & Co. | Our Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #0b0c10;
-            color: #f5f5f5;
-            padding-bottom: 60px;
-        }
-
-        h1, h2, h3, .logo {
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* شريط التنقل العلوي لسهولة الرجوع للرئيسية */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 8%;
-            background-color: #0b0c10;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            color: #c5a880;
-            text-decoration: none;
-        }
-
-        .btn-home {
-            border: 2px solid #c5a880;
-            color: #c5a880;
-            padding: 8px 20px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn-home:hover {
-            background-color: #c5a880;
-            color: #0b0c10;
-        }
-
-        /* عنوان المنيو الرئيسي */
-        .menu-header {
-            text-align: center;
-            padding: 60px 20px 40px 20px;
-        }
-
-        .menu-header h1 {
-            font-size: 50px;
-            color: #c5a880;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-
-        .menu-header p {
-            color: #888;
-            font-size: 16px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        /* تقسيم شبكة الأطباق بالصور */
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            padding: 0 8%;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        /* كارت الطبق */
-        .menu-card {
-            background-color: #111217;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            border-radius: 6px;
-            overflow: hidden;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .menu-card:hover {
-            transform: translateY(-8px);
-            border-color: #c5a880;
-        }
-
-        /* صندوق الصورة التفاعلي */
-        .card-img-holder {
-            width: 100%;
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .card-img-holder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .menu-card:hover .card-img-holder img {
-            transform: scale(1.1);
-        }
-
-        /* تفاصيل ومكونات الطبق */
-        .card-details {
-            padding: 25px;
-        }
-
-        .card-title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-
-        .card-title-row h3 {
-            font-size: 22px;
-            color: #fff;
-        }
-
-        .price {
-            color: #c5a880;
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        .card-details p {
-            font-size: 14px;
-            color: #999;
-            line-height: 1.6;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
-        <a href="index.html" class="logo">STEAK & CO.</a>
-        <a href="index.html" class="btn-home">← Back To Home</a>
+        <div class="logo">STEAK & CO.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="menu-header">
-        <h1>The Fine Menu</h1>
-        <p>Exquisite Dishes Crafted to Perfection</p>
-    </div>
-
-    <main class="menu-grid">
-        
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?q=80&w=500" alt="Tomahawk Steak">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>Dry-Aged Tomahawk</h3>
-                    <span class="price">$85</span>
-                </div>
-                <p>45 Days dry-aged premium beef served with roasted garlic, fresh rosemary, and melted truffle butter sauce.</p>
-            </div>
+    <section class="menu-page-section">
+        <div class="section-title">
+            <h2>Our Premium Menu</h2>
+            <p>Selected cuts prepared by world-class chefs</p>
         </div>
 
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500" alt="BBQ Smoked Ribs">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>BBQ Smoked Ribs</h3>
-                    <span class="price">$42</span>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600" alt="Ribeye Steak">
+                <div class="menu-card-info">
+                    <h3>Ribeye Steak <span>$45</span></h3>
+                    <p>Rich, juicy and full-flavored with generous marbling throughout.</p>
                 </div>
-                <p>Slow-cooked for 12 hours in authentic hickory wood smoke, generously glazed with our secret honey BBQ sauce.</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?q=80&w=600" alt="Filet Mignon">
+                <div class="menu-card-info">
+                    <h3>Filet Mignon <span>$50</span></h3>
+                    <p>The most tender cut of beef, lean yet succulent with a mild flavor.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=600" alt="T-Bone Steak">
+                <div class="menu-card-info">
+                    <h3>T-Bone Steak <span>$55</span></h3>
+                    <p>Two steaks in one: a tender filet and a flavorful strip steak.</p>
+                </div>
             </div>
         </div>
-
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=500" alt="Wagyu Burger">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>Wagyu Reserve Burger</h3>
-                    <span class="price">$29</span>
-                </div>
-                <p>Melt-in-your-mouth premium Wagyu beef patty, vintage sharp cheddar cheese, caramelized onions, on a toasted brioche bun.</p>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=500" alt="Ribeye Steak">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>Prime Ribeye</h3>
-                    <span class="price">$55</span>
-                </div>
-                <p>Perfectly marbled cut, grilled to perfection over open flame, served with creamy mushroom peppercorn sauce.</p>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=500" alt="Truffle Fries">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>Truffle Fries</h3>
-                    <span class="price">$12</span>
-                </div>
-                <p>Hand-cut golden potatoes tossed in exquisite white truffle oil, grated parmesan cheese, and fresh parsley.</p>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="card-img-holder">
-                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=500" alt="Chocolate Lava Cake">
-            </div>
-            <div class="card-details">
-                <div class="card-title-row">
-                    <h3>Lava Cake</h3>
-                    <span class="price">$15</span>
-                </div>
-                <p>Rich Belgian chocolate cake with a warm molten core, served with a scoop of premium Madagascar vanilla bean ice cream.</p>
-            </div>
-        </div>
-
-    </main>
+    </section>
 
 </body>
 </html>
