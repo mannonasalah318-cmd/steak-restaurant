@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steak & Co. | Our Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        h2, .logo { font-family: 'Playfair Display', serif; }
+        body { background-color: #0b0c10; color: #f5f5f5; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 25px 8%; background-color: #0b0c10; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { font-size: 28px; color: #c5a880; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin: 0 20px; }
+        .nav-links a { font-size: 15px; color: #cdcdcd; text-decoration: none; }
+        .nav-links a:hover, .nav-links .active { color: #c5a880; }
+
+        .about-container { padding: 80px 8%; display: flex; align-items: center; gap: 50px; max-width: 1200px; margin: 0 auto; }
+        .about-content { flex: 1; }
+        .about-content h2 { font-size: 42px; color: #c5a880; margin-bottom: 20px; }
+        .about-content p { color: #cdcdcd; margin-bottom: 20px; line-height: 1.8; }
+        .about-img { flex: 1; }
+        .about-img img { width: 100%; border-radius: 4px; box-shadow: 15px 15px 0 #c5a880; }
+        .back-btn { display: inline-block; background-color: #c5a880; color: #0b0c10; padding: 10px 30px; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">STEAK & CO.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" class="active">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Since day one, Steak & Co. has been dedicated to redefining fine dining. We don't just cook; we honor the ingredients.</p>
+            <p>Every evening here is designed to be an upscale journey of flavors, elegant atmosphere, and top-tier hospitality.</p>
+            <a href="index.html" class="back-btn">Back To Home</a>
+        </div>
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=600" alt="Chef">
+        </div>
+    </div>
+
+</body>
+</html>
